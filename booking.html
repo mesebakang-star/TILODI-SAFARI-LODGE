@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Booking System</h1>
+    <form action="/submit-booking" method="POST">
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="bookingDate">Booking Date:</label>
+        <input type="date" id="bookingDate" name="bookingDate" required>
+
+        <label for="activities">Select Activity:</label>
+        <select id="activities" name="activities" required>
+            <option value="safari">Safari</option>
+            <option value="hiking">Hiking</option>
+            <option value="fishing">Fishing</option>
+        </select>
+
+        <label for="payment">Payment Information:</label>
+        <input type="text" id="payment" name="payment" placeholder="Credit Card Number" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
